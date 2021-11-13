@@ -58,23 +58,27 @@ play_game = True
 while play_game:
 
     name = input("What is your name? \n").title()
-    print("Hello " + name + "! Would you like to play Rock Paper Scissors? y/n ")
+    start_game = ("Hello " + name + "! Would you like to play Rock Paper Scissors? y/n ")
+
+    print(start_game)
 
     answer = input().lower()
+    answers = [ 'y','n']
 
-    if answer.lower() == "y":
-        print("\t Play Rock-Paper-Scissors with computer to display a picture after 3 wins! \n")
-        print("\t 'r' for Rock, 'p' for Paper, 's' for Scissors, 'q' for Quit \n ")
-        player_win(5)
+    while answer not in answers:
+        answer = input("\n Please enter 'y' or 'n' to start or exit the game :)").lower()
 
-    elif answer.lower() == "n":
-        print("Exit game")
-        play_game = False
+        if answer.lower() == "y":
+            print("\t Play Rock-Paper-Scissors with computer to display a picture after 3 wins! \n")
+            print("\t 'r' for Rock, 'p' for Paper, 's' for Scissors, 'q' for Quit \n ")
+            player_win(5)
 
-    else:
-        print("Please enter y or n :)")
-
-
+        elif answer.lower() == "n":
+            print("Exit game")
+            play_game = False
+        
+        else:
+            print("Please enter y or n :)")
 
 
 print("Thank you for playing. Hope to see you again ^8^ ")
