@@ -5,9 +5,13 @@ def play():
     """
     set rules and start to play
     """
+    player = None
 
-    player = input().lower()
-    computer = random.choice(['r','p','s'])
+    choices = ['r','p','s']
+    while player not in choices:
+        player = input("Please enter your choice 'r' for Rock, 'p' for Paper or 's' for Scissors:\n").lower()
+
+    computer = random.choice(choices)
     
     if player == computer:
         return (0,player,computer)
@@ -36,7 +40,7 @@ def player_win(n):
     while player_wins < wins_count and player_wins < 3:
         result, player, computer = play()
         if result == 0:
-            print("It's a tie. \n You have chosen {}. \n The computer has chosen {}. \n".format(player, computer))
+            print("It's a tie.\n You have chosen {}. \n The computer has chosen {}.\n".format(player, computer))
         elif result == 1:
             player_wins += 1
             print("You won! ^^. \n You have chosen {}. \n The computer has chosen {}. \n".format(player, computer))
@@ -66,8 +70,12 @@ while play_game:
     elif answer.lower() == "n":
         print("Exit game")
         play_game = False
+
     else:
         print("Please enter y or n :)")
+
+
+
 
 print("Thank you for playing. Hope to see you again ^8^ ")
 
