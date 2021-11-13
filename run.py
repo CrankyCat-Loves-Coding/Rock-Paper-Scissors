@@ -61,7 +61,7 @@ while play_game:
     if answer.lower() == "y":
         print("\t Play Rock-Paper-Scissors with computer to display a picture after 3 wins! \n")
         print("\t 'r' for Rock, 'p' for Paper, 's' for Scissors, 'q' for Quit \n ")
-        player_win(3)
+        player_win(5)
 
     elif answer.lower() == "n":
         print("Exit game")
