@@ -35,6 +35,7 @@ def win(a, b):
 def player_win(n):
     """
     play with the computer until player wins 3 games
+    computer prints partial image each time player wins 
     """
     player_wins = 0
     wins_count = math.ceil(n/2)
