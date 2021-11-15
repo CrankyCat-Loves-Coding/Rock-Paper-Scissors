@@ -1,12 +1,28 @@
 import random
 import math
 
+def welcome():
+    print("──────────────────────────────────────────────────")
+    print("─████████████████───██████████████─██████████████─")
+    print("─██░░░░░░░░░░░░██───██░░░░░░░░░░██─██░░░░░░░░░░██─")
+    print("─██░░████████░░██───██░░██████░░██─██░░██████████─")
+    print("─██░░██────██░░██───██░░██──██░░██─██░░██─────────")
+    print("─██░░████████░░██───██░░██████░░██─██░░██████████─")
+    print("─██░░░░░░░░░░░░██───██░░░░░░░░░░██─██░░░░░░░░░░██─")
+    print("─██░░██████░░████───██░░██████████─██████████░░██─")
+    print("─██░░██──██░░██─────██░░██─────────────────██░░██─")
+    print("─██░░██──██░░██████─██░░██─────────██████████░░██─")
+    print("─██░░██──██░░░░░░██─██░░██─────────██░░░░░░░░░░██─")
+    print("─██████──██████████─██████─────────██████████████─")
+    print("──────────────────────────────────────────────────")
+    print("─────────────────Come─and─Play────────────────────\n")
+
 def start():
     """
     Ask for player's name and if they want to play the game or exit the game
     """
     name = input("What is your name? \n").title()
-    start_game = ("Hello " + name + "! Would you like to play Rock Paper Scissors? y/n ")
+    start_game = ("\nHello " + name + "! Would you like to play Rock Paper Scissors? y/n ")
 
     print(start_game)
 
@@ -18,11 +34,11 @@ def start():
         answers = ['y', 'n']
 
         while answer not in answers:
-            answer = input("\n Please enter 'y' or 'n' to start or exit the game :)\n").lower()
+            answer = input("\nPlease enter 'y' or 'n' to start or exit the game :)\n").lower()
 
         if answer.lower() == "y":
-            print("\t Play Rock-Paper-Scissors with computer to display a picture after 3 wins! \n")
-            print("\t 'r' for Rock, 'p' for Paper, 's' for Scissors \n ")
+            print("\nPlay Rock-Paper-Scissors with computer to display a picture after 3 wins! ")
+            print("\n'r' for Rock, 'p' for Paper, 's' for Scissors \n ")
             player_win(5)
 
         elif answer.lower() == "n":
@@ -148,5 +164,9 @@ def main():
     """
     Run all program functions
     """
+    welcome()
     start()
-main()
+    
+
+if __name__ == "__main__":
+    main()
