@@ -1,6 +1,37 @@
 import random
 import math
 
+def start():
+    """
+    Ask for player's name and if they want to play the game or exit the game
+    """
+    name = input("What is your name? \n").title()
+    start_game = ("Hello " + name + "! Would you like to play Rock Paper Scissors? y/n ")
+
+    print(start_game)
+
+    play_game = True
+
+    while play_game:
+
+        answer = input().lower()
+        answers = ['y', 'n']
+
+        while answer not in answers:
+            answer = input("\n Please enter 'y' or 'n' to start or exit the game :)\n").lower()
+
+        if answer.lower() == "y":
+            print("\t Play Rock-Paper-Scissors with computer to display a picture after 3 wins! \n")
+            print("\t 'r' for Rock, 'p' for Paper, 's' for Scissors \n ")
+            player_win(5)
+
+        elif answer.lower() == "n":
+            print("Exit game")
+            print("Thank you for playing. Hope to see you again ^8^ ")
+            play_game = False
+        else:
+            print("Please enter y or n :)")
+
 
 def play():
     """
@@ -12,7 +43,6 @@ def play():
     while player not in choices:
         player = input("Enter 'r' for Rock,'p' for Paper,'s' for Scissors\n")
         player = player.lower()
-
 
     computer = random.choice(choices)
     if player == computer:
@@ -52,6 +82,7 @@ def player_win(n):
             print("You have chosen {}.".format(player))
             print("The computer has chosen {}.".format(computer))
             if player_wins == 1:
+                print('There is your reward! (づ｡◕‿‿◕｡)づ \n')
                 print("────────────────────██████──────────")
                 print("──────────────────██▓▓▓▓▓▓██────────")
                 print("────────────────██▓▓▓▓▒▒▒▒██────────")
@@ -62,6 +93,7 @@ def player_win(n):
                 print("────────────████▒▒████▒▒██──────────")
                 print("────────────██▓▓▒▒▒▒▒▒▒▒██──────────")
             elif player_wins == 2:
+                print('There is your reward! (づ｡◕‿‿◕｡)づ \n')
                 print("──────────██────▒▒────▒▒██──────────")
                 print("──────────████──▒▒██──▒▒██──────────")
                 print("──────────██────▒▒────▒▒██──────────")
@@ -100,7 +132,10 @@ def player_win(n):
                 print("──────██▌▌▐▌▐▌▐▌▐▌▐▌▐▌▐▌▌▌▌▌██──────")
                 print("──────██▐▌▐▌▐▌████████▐▌▌▌▌▌██──────")
                 print("────────██▒▒██────────██▒▒██────────")
-                print("────────██████────────██████────────")
+                print("────────██████────────██████────────\n")
+                print("Would you like to play again?\n")
+                print(" 'y' to continue \n")
+                print(" 'q' and then 'n' to exit the game \n")
             else:
                 print()
         else:
@@ -109,36 +144,9 @@ def player_win(n):
             print("The computer has chosen {}.".format(computer))
         print()
 
-#Ask for player name and if they want to play the game or exit the game
-
-play_game = True
-
-while play_game:
-
-    name = input("What is your name? \n").title()
-    start_game = ("Hello " + name + "! Would you like to play Rock Paper Scissors? y/n ")
-
-    print(start_game)
-
-    answer = input().lower()
-    answers = ['y', 'n']
-
-    while answer not in answers:
-        answer = input("\n Please enter 'y' or 'n' to start or exit the game :)\n").lower()
-
-    if answer.lower() == "y":
-        print("\t Play Rock-Paper-Scissors with computer to display a picture after 3 wins! \n")
-        print("\t 'r' for Rock, 'p' for Paper, 's' for Scissors \n ")
-        player_win(5)
-
-    elif answer.lower() == "n":
-        print("Exit game")
-        play_game = False
-        
-    else:
-        print("Please enter y or n :)")
-
-
-print("Thank you for playing. Hope to see you again ^8^ ")
-
-
+def main():
+    """
+    Run all program functions
+    """
+    start()
+main()
