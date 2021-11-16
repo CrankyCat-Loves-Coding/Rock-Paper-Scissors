@@ -38,7 +38,7 @@ def start():
     print("\nHello " + name + "!ヽ(^o^)丿\n")
     time.sleep(1)
     print("Would you like to play Rock Paper Scissors?\n")
-    time.sleep(2)
+    time.sleep(1)
     print("Please enter 'y' for Yes and 'n' for No:\n")
 
     # start game
@@ -53,7 +53,7 @@ def start():
 
         while answer not in answers:
             answer = input("\nEnter 'y' or 'n' to start or exit the game :)\n")
-            answer = input().lower()
+            answer = answer.lower()
         # game start if y entered
         if answer.lower() == "y":
             print("\nPlay Rock-Paper-Scissors with computer to display a picture after 3 wins! ")
