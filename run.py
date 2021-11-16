@@ -62,7 +62,21 @@ def start():
         # exit game if n entered
         elif answer.lower() == "n":
             print("Exit game")
-            print("Thank you for playing. Hope to see you again ^8^ ")
+            print("Thank you for playing. Hope to see you again ^8^ \n")
+            print("╭━━━━┳╮╱╱╱╱╱╱╱╭╮╱╱╭╮╱╱╭╮")
+            print("┃╭╮╭╮┃┃╱╱╱╱╱╱╱┃┃╱╱┃╰╮╭╯┃")
+            print("╰╯┃┃╰┫╰━┳━━┳━╮┃┃╭╮╰╮╰╯╭┻━┳╮╭╮")
+            print("╱╱┃┃╱┃╭╮┃╭╮┃╭╮┫╰╯╯╱╰╮╭┫╭╮┃┃┃┃")
+            print("╱╱┃┃╱┃┃┃┃╭╮┃┃┃┃╭╮╮╱╱┃┃┃╰╯┃╰╯┃")
+            print("╱╱╰╯╱╰╯╰┻╯╰┻╯╰┻╯╰╯╱╱╰╯╰━━┻━━╯")
+            print("╭━━╮")
+            print("┃╭╮┃")
+            print("┃╰╯╰┳╮╱╭┳━━╮")
+            print("┃╭━╮┃┃╱┃┃┃━┫")
+            print("┃╰━╯┃╰━╯┃┃━┫")
+            print("╰━━━┻━╮╭┻━━╯")
+            print("╱╱╱╱╭━╯┃")
+            print("╱╱╱╱╰━━╯")
             play_game = False
         else:
             print("Please enter y or n :)")
