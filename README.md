@@ -1,6 +1,6 @@
 # [**Rock Paper Scissors**](https://rack-paper-scissors.herokuapp.com/)
 
-![Portfolio image](images/welcome-page.jpg)
+![Portfolio image](images/main-picture.jpg)
 
 ## **Overview**
 
@@ -92,7 +92,7 @@ Rock paper scissors is often used as a fair choosing method between two people, 
   - [Python](https://www.python.org/)
   - [PEP8](http://pep8online.com/)
   - [Wiki](https://www.wikipedia.org/)
-  - [Heroku]( https://dashboard.heroku.com/apps) 
+  - [Heroku]( https://dashboard.heroku.com/apps)
 
 ### 4. **Deployment**
 

@@ -60,14 +60,16 @@ def start():
             print("▒█▀▀█ ▒█░▒█ ▒█░░░ ▒█▀▀▀ ▒█▀▀▀█ ")
             print("▒█▄▄▀ ▒█░▒█ ▒█░░░ ▒█▀▀▀ ░▀▀▀▄▄ ")
             print("▒█░▒█ ░▀▄▄▀ ▒█▄▄█ ▒█▄▄▄ ▒█▄▄▄█ ")
-            print("──────────────────────────────────────────────────────────")
-            print("Rock Paper Scissors (RPS) is popular all over the world." +
-                  "The rules to play are pretty simple.\n")
+            print("────────────────────────────────────────────────────────\n")
+            time.sleep(1)
+            print("Rock Paper Scissors (RPS) is popular all over the world.\n")
+            time.sleep(1)
+            print("The rules to play are pretty simple.\n")
             time.sleep(1)
             print("The computer randomly chooses Rock, Paper or Scissors.\n")
             time.sleep(1)
-            print("The player can enter ‘r’ for Rock, ‘p’ for Paper or ‘s’ " +
-                  "for Scissors to play against the computer.\n")
+            print("The player can enter \n‘r’ for Rock, \n‘p’ for Paper or" +
+                  "\n‘s’ for Scissors to play against the computer.\n")
             time.sleep(1)
             print("The outcome of the game is determined by 3 simple rules:\n")
             time.sleep(1)
