@@ -57,21 +57,32 @@ def start():
             answer = answer.lower()
         # game start if y entered
         if answer.lower() == "y":
-            promt = ("Rock Paper Scissors (RPS) is popular all over the world.")
-            print("The rules to play it are pretty simple.")
-            print("The computer chooses Rock, Paper or Scissors randomly.")
-            print("The player enter 'r' for Rock, ")
-            print("'p' for Paper, 's' for Scissors.")
-            print("The outcome of the game is determined by 3 simple rules:")
+            print("▒█▀▀█ ▒█░▒█ ▒█░░░ ▒█▀▀▀ ▒█▀▀▀█ ")
+            print("▒█▄▄▀ ▒█░▒█ ▒█░░░ ▒█▀▀▀ ░▀▀▀▄▄ ")
+            print("▒█░▒█ ░▀▄▄▀ ▒█▄▄█ ▒█▄▄▄ ▒█▄▄▄█ ")
+            print("──────────────────────────────────────────────────────────")
+            print("Rock Paper Scissors (RPS) is popular all over the world." +
+                  "The rules to play are pretty simple.\n")
+            time.sleep(1)
+            print("The computer randomly chooses Rock, Paper or Scissors.\n")
+            time.sleep(1)
+            print("The player can enter ‘r’ for Rock, ‘p’ for Paper or ‘s’ "
+                  + "for Scissors to play against the computer.\n")
+            time.sleep(1)
+            print("The outcome of the game is determined by 3 simple rules:\n")
+            time.sleep(1)
             print("Rock wins against scissors.")
             print("Scissors win against paper.")
-            print("Paper wins against rock.")
-            print("The computer displays a puzzle each time a player wins.")
-            print("The player need to win 3 times")
-            print("to get a full picture displayed.")
-            print("Now let's enter 'r' for Rock, ")
-            print("'p' for Paper, 's' for Scissors")
-            print("to start to play ─=≡Σ(((つ•̀ω•́)つ ")
+            print("Paper wins against rock.\n")
+            time.sleep(2)
+            print("The computer displays a puzzle " +
+                  "each time the player wins.\n")
+            time.sleep(1)
+            print("The player need to win 3 times" +
+                  "to get a full picture displayed.\n")
+            time.sleep(1)
+            print("Let's play and good luck! ─=≡Σ(((つ•̀ω•́)つ \n")
+
             player_win(5)
         # exit game if n entered
         elif answer.lower() == "n":
@@ -99,7 +110,7 @@ def start():
 def play():
     """
     set rules
-    the computer randomly choose r, p and s. 
+    the computer randomly choose r, p and s.
     validate player input and display message for unexpected answers
     asign value 0 for a tie
     otherwise asign 1 to player for winning
@@ -133,7 +144,7 @@ def win(a, b):
 def player_win(n):
     """
     play with the computer until player wins 3 games
-    computer prints partial image each time player wins 
+    computer prints partial image each time player wins
     """
     player_wins = 0
     wins_count = math.ceil(n/2)
@@ -212,13 +223,14 @@ def player_win(n):
             print("The computer has chosen {}.".format(computer))
         print()
 
+
 def main():
     """
     Run all program functions
     """
     welcome()
     start()
-    
+
 
 if __name__ == "__main__":
     main()
