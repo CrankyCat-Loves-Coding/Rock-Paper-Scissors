@@ -78,8 +78,8 @@ def start():
             print("The computer displays a puzzle " +
                   "each time the player wins.\n")
             time.sleep(1)
-            print("The player need to win 3 times" +
-                  "to get a full picture displayed.\n")
+            print("Once the player has won 3 times, " +
+                  "the computer displays a full image.\n")
             time.sleep(1)
             print("Let's play and good luck! ─=≡Σ(((つ•̀ω•́)つ \n")
 
@@ -148,8 +148,9 @@ def win(player, opponent):
 
 def player_win(n):
     """
-    play with the computer until player wins 3 games
-    computer prints partial image each time player wins
+    If the player wins, the computer displays a message and a partial image.
+    Once the player has won 3 times, the computer displays a full image.
+    Then the player is asked if they wish to replay the game or exit the game.
     """
     player_wins = 0
     wins_count = math.ceil(n/2)
