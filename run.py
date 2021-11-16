@@ -66,8 +66,8 @@ def start():
             time.sleep(1)
             print("The computer randomly chooses Rock, Paper or Scissors.\n")
             time.sleep(1)
-            print("The player can enter ‘r’ for Rock, ‘p’ for Paper or ‘s’ "
-                  + "for Scissors to play against the computer.\n")
+            print("The player can enter ‘r’ for Rock, ‘p’ for Paper or ‘s’ " +
+                  "for Scissors to play against the computer.\n")
             time.sleep(1)
             print("The outcome of the game is determined by 3 simple rules:\n")
             time.sleep(1)
@@ -131,14 +131,19 @@ def play():
     return (-1, player, computer)
 
 
-def win(a, b):
+def win(player, opponent):
     """
-    the player won will return to be true
-    r > s, s > p, p > r
+    the player wins return to be true
+    winning condition as r > s, s > p, p > r
     """
-    if (a == 'r' and b == 's') or (a == 's' and b == 'p') or (a == 'p' and b == 'r'):
+    if (player == 'r' and opponent == 's'):
         return True
-    return False
+    elif(player == 's' and opponent == 'p'):
+        return True
+    elif(player == 'p' and opponent == 'r'):
+        return True
+    else:
+        return False
 
 
 def player_win(n):
