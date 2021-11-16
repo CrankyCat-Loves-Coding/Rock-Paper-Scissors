@@ -1,9 +1,10 @@
 import random
 import math
+import time
 
 def welcome():
     """
-    add welcome page 
+    add welcome page
     display game name and welcome to play
     """
     print("──────────────────────────────────────────────────")
@@ -25,12 +26,17 @@ def welcome():
 
 def start():
     """
-    Ask for player's name and if they want to play the game or exit the game
+    the program will first obtain player's name
+    then greet to the player
+    game starts when player enter y
+    game exit when play enter n
     """
     name = input("What is your name? \n").title()
-    start_game = ("\nHello " + name + "! Would you like to play Rock Paper Scissors? y/n ")
-
-    print(start_game)
+    print("\nHello " + name + "!ヽ(^o^)丿\n")
+    time.sleep(1)
+    print("Would you like to play Rock Paper Scissors?\n")
+    time.sleep(2)
+    print("Please enter 'y' for Yes and 'n' for No:\n")
 
     play_game = True
 
