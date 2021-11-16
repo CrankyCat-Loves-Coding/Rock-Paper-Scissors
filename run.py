@@ -22,6 +22,7 @@ def welcome():
     print("─██████──██████████─██████─────────██████████████─")
     print("──────────────────────────────────────────────────")
     print("─────────────────Come─and─Play────────────────────")
+    print("───────────────Rock─Paper─Scissors────────────────")
     print("───────────────────(^.^)YYa!!─────────────────────\n")
 
 
@@ -56,8 +57,21 @@ def start():
             answer = answer.lower()
         # game start if y entered
         if answer.lower() == "y":
-            print("\nPlay Rock-Paper-Scissors with computer to display a picture after 3 wins! ")
-            print("\n'r' for Rock, 'p' for Paper, 's' for Scissors \n ")
+            promt = ("Rock Paper Scissors (RPS) is popular all over the world.")
+            print("The rules to play it are pretty simple.")
+            print("The computer chooses Rock, Paper or Scissors randomly.")
+            print("The player enter 'r' for Rock, ")
+            print("'p' for Paper, 's' for Scissors.")
+            print("The outcome of the game is determined by 3 simple rules:")
+            print("Rock wins against scissors.")
+            print("Scissors win against paper.")
+            print("Paper wins against rock.")
+            print("The computer displays a puzzle each time a player wins.")
+            print("The player need to win 3 times")
+            print("to get a full picture displayed.")
+            print("Now let's enter 'r' for Rock, ")
+            print("'p' for Paper, 's' for Scissors")
+            print("to start to play ─=≡Σ(((つ•̀ω•́)つ ")
             player_win(5)
         # exit game if n entered
         elif answer.lower() == "n":
@@ -84,7 +98,12 @@ def start():
 
 def play():
     """
-    set rules and start to play
+    set rules
+    the computer randomly choose r, p and s. 
+    validate player input and display message for unexpected answers
+    asign value 0 for a tie
+    otherwise asign 1 to player for winning
+    and assign -1 for losing
     """
     player = None
 
@@ -184,7 +203,7 @@ def player_win(n):
                 print("────────██████────────██████────────\n")
                 print("Would you like to play again?\n")
                 print("Enter 'y' to continue \n")
-                print("Enter 'q' and then 'n' to exit the game \n")
+                print("Enter any key and then 'n' to exit the game \n")
             else:
                 print()
         else:
