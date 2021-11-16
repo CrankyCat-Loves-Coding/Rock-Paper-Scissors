@@ -169,8 +169,8 @@ def player_win(n):
                 print("────────██▒▒██────────██▒▒██────────")
                 print("────────██████────────██████────────\n")
                 print("Would you like to play again?\n")
-                print(" 'y' to continue \n")
-                print(" 'q' and then 'n' to exit the game \n")
+                print("Enter 'y' to continue \n")
+                print("Enter 'q' and then 'n' to exit the game \n")
             else:
                 print()
         else:
