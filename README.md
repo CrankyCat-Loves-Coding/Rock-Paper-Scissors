@@ -83,7 +83,7 @@ Rock paper scissors is often used as a fair choosing method between two people, 
   - No errors or warnings were found when passing through the official PEP8 validator.
 
 - Normal testing
-  - The game runs smoothly with normal activities such as correct input 'y' or 'n'. Image and message for tie, win and lost display accordingly. More details can be found as per displayed gif image.
+  - The game runs smoothly with normal activities. Obtaining the player's name and capitalized the first letter correctly. Validating the player's input such as 'y' or 'n' for start or exit the game. Showing no issues for corrent moves as 'r', 'p' or 's', also image and message for tie, win or lost displayed accordingly. The game can be exited easily by enter 'n' and goodbye message displayed correctly. More details can be found as per following gif image.
   - ![testing-normal](images/testing-normal-30sec.gif)
 
 - Function start() testing:
