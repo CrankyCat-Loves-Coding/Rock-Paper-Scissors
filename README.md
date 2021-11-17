@@ -94,6 +94,9 @@ Rock paper scissors is often used as a fair choosing method between two people, 
   - The same bug fixed in play() function. The computer displays a message to the player if invalid input is identified. For example, the computer will display a message of "enter 'r' for Rock,'p' for Paper,'s' for Scissors" to the player if input identified as 'abc' where it should has been chosen 'r', 'p' or 's'.
   - ![testing input play function](images/input-validate-play-function.gif)
 
+- Function player_win( ) testing:
+  - The game is designed to allow the player to win 3 times of the game. However, there was a bug where the game ended after the player has won 2 times. It was fixed by updating the n value when called the function. It needed to be 5 other than 3 because of the math.ceiling method. 
+
 - Goodbye message testing:
   - The game terminates if the player enters ‘n’  and  Goodbye message displayed as expected.
   - ![goodbye message](images/goodbye-message.gif)
