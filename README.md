@@ -91,7 +91,7 @@ Rock paper scissors is often used as a fair choosing method between two people, 
   - ![testing-input](images/input-validate.gif)
 
 - Function play() testing:
-  - The same bug fixed in play() function. The computer displays a message to the player if invalid input is identified. For example, the computer will display a message the player if input has been 'abc'.
+  - The same bug fixed in play() function. The computer displays a message to the player if invalid input is identified. For example, the computer will display a message of "enter 'r' for Rock,'p' for Paper,'s' for Scissors" to the player if input identified as 'abc' where it should has been chosen 'r', 'p' or 's'.
   - ![testing input play function](images/input-validate-play-function.gif)
 
 - Goodbye message testing:
