@@ -83,17 +83,20 @@ Rock paper scissors is often used as a fair choosing method between two people, 
   - No errors or warnings were found when passing through the official PEP8 validator.
 
 - Normal testing
+  - The game runs smoothly with normal activities such as correct input 'y' or 'n'. Image and message for tie, win and lost display accordingly. More details can be found as per displayed gif image.
   - ![testing-normal](images/testing-normal-30sec.gif)
 
-  The game runs smoothly with normal activities such as correct input 'y' or 'n'. More details can be found as per displayed gif image.
-
-- Function start()
+- Function start() testing:
   - A bug was identified when testing on the start() function. There was a chance that a player may enter anything else other than y’ or ‘n. Hence used while…not in…: method to validate input and display a message to require the player to enter only ‘y’ or ‘n’ to start or exit the game. Then the player can exit the game by entering 'n' without any issue.
   - ![testing-input](images/input-validate.gif)
 
-- Function play()
+- Function play() testing:
   - The same bug fixed in play() function. The computer displays a message to the player if invalid input is identified. For example, the computer will display a message the player if input has been 'abc'.
   - ![testing input play function](images/input-validate-play-function.gif)
+
+- Goodbye message testing:
+  - The game terminates if the player enters ‘n’  and  Goodbye message displayed as expected.
+  - ![goodbye message](images/goodbye-message.gif)
 
 - Technology Stack
   - [Python](https://www.python.org/)
@@ -102,6 +105,8 @@ Rock paper scissors is often used as a fair choosing method between two people, 
   - [Heroku]( https://dashboard.heroku.com/apps)
   - [Responsive design](http://ami.responsivedesign.is/#)
   - [giphy](https://giphy.com/)
+
+[Back to the top](#overview)
 
 ### 4. **Deployment**
 
